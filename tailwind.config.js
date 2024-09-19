@@ -3,6 +3,11 @@ module.exports = {
   content: ["./*.html", "./src/*.html"],
   theme: {
     extend: {
+      boxShadow: {
+        "custom-light": "2px 4px 16px -1px rgba(90,90,90,0.3)", // Light color shadow
+        "custom-dark": "0 4px 6px -1px rgba(0, 0, 0, 0.75)", // Dark color shadow
+        "custom-purple": "1px 4px 16px 1px rgba(128, 50, 128, 0.7)",
+      },
       fontSize: {
         "xs-10": "10px", // Custom class for 10px font size
       },
