@@ -805,7 +805,23 @@ video {
 }
 
 .animate-appear {
-  animation: appear linear 1s;
+  animation: appear linear 2s;
+}
+
+@keyframes circle-Open {
+  0% {
+    opacity: 0;
+    clip-path: circle(0% at 50% 50%);
+  }
+
+  100% {
+    opacity: 1;
+    clip-path: circle(100% at 50% 50%);
+  }
+}
+
+.animate-circle-open {
+  animation: circle-Open 2s forwards;
 }
 
 @keyframes fadeIn {
@@ -821,7 +837,7 @@ video {
 }
 
 .animate-fadeIn {
-  animation: fadeIn linear 1s;
+  animation: fadeIn linear 2s;
 }
 
 @keyframes fadeOut {
@@ -837,7 +853,7 @@ video {
 }
 
 .animate-fadeOut {
-  animation: fadeOut linear 1s;
+  animation: fadeOut linear 2s;
 }
 
 @keyframes flowerOpen {
@@ -853,7 +869,7 @@ video {
 }
 
 .animate-flowerOpen {
-  animation: flowerOpen 2s ease-in-out forwards;
+  animation: flowerOpen 2s forwards;
 }
 
 @keyframes slide-bottom {
@@ -869,17 +885,7 @@ video {
 }
 
 .animate-slide-bottom {
-  animation: slide-bottom 1s forwards;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.animate-spin {
-  animation: spin 1s linear infinite;
+  animation: slide-bottom 2s forwards;
 }
 
 @keyframes slide-left {
@@ -895,7 +901,7 @@ video {
 }
 
 .animate-slide-left {
-  animation: slide-left 1s forwards;
+  animation: slide-left 2s forwards;
 }
 
 @keyframes slide-right {
@@ -911,7 +917,33 @@ video {
 }
 
 .animate-slide-right {
-  animation: slide-right 1s forwards;
+  animation: slide-right 2s forwards;
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-top {
+  animation: slide-top 2s forwards;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
 }
 
 .resize-none {
@@ -1514,10 +1546,23 @@ video {
   transition-duration: 300ms;
 }
 
+.border-linear {
+  border: 1px solid;
+  -o-border-image: linear-gradient(to bottom right, rgba(112, 59, 247, 1) 12.99%, rgba(38, 38, 38, 1) 39%) 1;
+     border-image: linear-gradient(to bottom right, rgba(112, 59, 247, 1) 12.99%, rgba(38, 38, 38, 1) 39%) 1;
+  border-radius: inherit;
+  z-index: -1;
+}
+
 .scroll-animate {
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
 }
+
+/* .scroll-animate {
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+} */
 
 .hover\:-translate-y-1:hover {
   --tw-translate-y: -0.25rem;
