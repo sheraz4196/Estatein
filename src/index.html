@@ -12,7 +12,7 @@
   </head>
   <body class="bg-color-all font-urbanist">
     <!-- main container each section in main container -->
-    <div class="main-div-container">
+    <div class="main-div-container max-w-screen-3xl mx-auto">
       <!-- header and banner -->
       <div class="grid grid-rows-2 gap-0.5">
         <!-- head for home page -->
@@ -192,7 +192,7 @@
               <img
                 src="../public/assets/homepage/sub-container.png"
                 alt="sub Container"
-                class="absolute animate-spin -bottom-11 left-0 xl:-left-[4.3rem] xl:top-28 xl:w-36"
+                class="absolute animate-spin-slow -bottom-11 left-0 xl:-left-[4.3rem] xl:top-28 xl:w-36"
               />
             </div>
           </div>
@@ -790,10 +790,8 @@
           </section>
         </section>
         <!-- features section -->
-        <section
-          class="animate-appear scroll-animate flex flex-col gap-8 px-3 xl:px-10 2xl:px-20"
-        >
-          <div>
+        <section class="flex flex-col gap-8 px-3 xl:px-10 2xl:px-20">
+          <div class="animate-fadeIn scroll-animate">
             <img
               src="../public/assets/homepage/pricing-logo-star.png"
               alt="pricing-logo-star"
@@ -829,7 +827,7 @@
               </a>
             </div>
           </div>
-          <div class="grid grid-flow-col gap-5">
+          <div class="grid grid-flow-col gap-5 animate-appear scroll-animate">
             <div
               class="p-6 border border-dark-border rounded-xl gap-4 xl:grid hidden"
             >
@@ -1330,7 +1328,7 @@
             </div>
           </div>
           <div
-            class="flex justify-between items-center pt-4 border-t border-dark-border"
+            class="animate-appear scroll-animate flex justify-between items-center pt-4 border-t border-dark-border"
           >
             <a
               href="#"
@@ -1999,7 +1997,7 @@
         </section>
       </div>
       <!-- footer -->
-      <footer class="animate-fadeOut scroll-animate flex gap-10 flex-col">
+      <footer class="flex gap-10 flex-col">
         <!-- first div for footer paragraph button background images etc -->
         <div
           class="relative border-y border-dark-border grid items-center sm:h-64 overflow-hidden"
@@ -2311,9 +2309,9 @@
               </button>
             </p>
           </div>
-          <div class="flex gap-3 sm:gap-6">
+          <div class="flex gap-3 sm:gap-6 overflow-hidden">
             <svg
-              class="bg-color-all p-3.5 h-14 w-14 rounded-full"
+              class="animate-flowerOpen bg-color-all p-3.5 h-14 w-14 rounded-full"
               viewBox="0 0 13 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -2324,7 +2322,7 @@
               />
             </svg>
             <svg
-              class="bg-color-all p-3.5 h-14 w-14 rounded-full"
+              class="animate-slide-bottom bg-color-all p-3.5 h-14 w-14 rounded-full"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -2335,7 +2333,7 @@
               />
             </svg>
             <svg
-              class="bg-color-all p-3.5 h-14 w-14 rounded-full"
+              class="animate-slide-top bg-color-all p-3.5 h-14 w-14 rounded-full"
               viewBox="0 0 20 18"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -2346,7 +2344,7 @@
               />
             </svg>
             <svg
-              class="bg-color-all p-3.5 h-14 w-14 rounded-full"
+              class="animate-circle-open bg-color-all p-3.5 h-14 w-14 rounded-full"
               viewBox="0 0 22 16"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
