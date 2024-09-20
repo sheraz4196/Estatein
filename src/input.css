@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* .scroll-animate {
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+} */

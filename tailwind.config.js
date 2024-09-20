@@ -3,6 +3,92 @@ module.exports = {
   content: ["./*.html", "./src/*.html"],
   theme: {
     extend: {
+      keyframes: {
+        appear: {
+          "0%": {
+            opacity: "0",
+            "clip-path": "inset(100% 100% 0 0)",
+          },
+          "100%": {
+            opacity: "1",
+            "clip-path": "inset(0 0 0 0)",
+          },
+        },
+        fadeIn: {
+          "0%": {
+            opacity: "0",
+            transform: "translateX(-200px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateX(0px)",
+          },
+        },
+        fadeOut: {
+          "0%": {
+            opacity: "0",
+            transform: "translateX(200px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateX(0px)",
+          },
+        },
+        flowerOpen: {
+          "0%": {
+            transform: "scale(0.2) rotate(0deg)", // Start small and unrotated
+            opacity: "0",
+          },
+          "100%": {
+            transform: "scale(1) rotate(0deg)", // Settle at full size and final position
+            opacity: "1",
+          },
+        },
+        "slide-left": {
+          "0%": { transform: "translateX(-100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        "slide-top": {
+          "0%": { transform: "translateY(-100%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        "slide-right": {
+          "0%": { transform: "translateX(100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        "slide-bottom": {
+          "0%": { transform: "translateY(100%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        "circle-Open": {
+          "0%": {
+            opacity: "0",
+            "clip-path": "circle(0% at 50% 50%)",
+          },
+          "100%": {
+            opacity: "1",
+            "clip-path": "circle(100% at 50% 50%)",
+          },
+        },
+      },
+      animation: {
+        appear: "appear linear 2s",
+        fadeIn: "fadeIn linear 2s",
+        fadeOut: "fadeOut linear 2s",
+        flowerOpen: "flowerOpen 2s forwards",
+        "slide-left": "slide-left 2s forwards", // Adjust duration as needed
+        "slide-right": "slide-right 2s forwards", // Adjust duration as needed
+        "slide-bottom": "slide-bottom 2s forwards",
+        "circle-open": "circle-Open 2s forwards",
+        "slide-top": "slide-top 2s forwards",
+        // "animation-timeline": "view()",
+        // "animation-range": " entry 0% cover 40%",
+      },
+      boxShadow: {
+        "custom-light": "2px 4px 16px -1px rgba(90,90,90,0.3)", // Light color shadow
+        "custom-dark": "0 4px 6px -1px rgba(0, 0, 0, 0.75)", // Dark color shadow
+        "custom-purple": "1px 4px 16px 1px rgba(128, 50, 128, 0.7)",
+      },
       fontSize: {
         "xs-10": "10px", // Custom class for 10px font size
       },
@@ -43,8 +129,13 @@ module.exports = {
           borderRadius: "inherit",
           zIndex: "-1",
         },
+        ".scroll-animate": {
+          animationTimeline: "view()",
+          animationRange: "entry 0% cover 40%",
+        },
       };
 
+      // Add utilities with responsive and hover variants
       addUtilities(newUtilities, ["responsive", "hover"]);
     },
   ],
