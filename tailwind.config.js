@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        '3xl': '1920px',  // 1920px se upar ke screens ke liye custom breakpoint
+        "3xl": "1920px", // 1920px se upar ke screens ke liye custom breakpoint
       },
       keyframes: {
         spin: {
@@ -55,6 +55,10 @@ module.exports = {
           "0%": { transform: "translateX(-100%)", opacity: "0" },
           "100%": { transform: "translateX(0)", opacity: "1" },
         },
+        "slide-left-fast": {
+          "0%": { transform: "translateX(-100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
         "slide-top": {
           "0%": { transform: "translateY(-100%)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
@@ -85,6 +89,7 @@ module.exports = {
         flowerOpen: "flowerOpen 2s forwards",
         "slide-left": "slide-left 2s forwards", // Adjust duration as needed
         "slide-right": "slide-right 2s forwards", // Adjust duration as needed
+        "slide-left-fast": "slide-left-fast forwards",
         "slide-bottom": "slide-bottom 2s forwards",
         "circle-open": "circle-Open 2s forwards",
         "slide-top": "slide-top 2s forwards",
