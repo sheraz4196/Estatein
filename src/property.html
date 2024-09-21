@@ -117,7 +117,7 @@
           </div>
           <!-- section first -->
           <section
-            class="border-b border-b-[#262626] px-3 py-12 sm:px-8 lg:py-32 2xl:py-52 lg:pl-10 lg:pr-64 2xl:px-20 bg-linear-gradient flex flex-col gap-3 2xl:gap-4"
+            class="animate-slide-left border-b border-b-[#262626] px-3 py-12 sm:px-8 lg:py-32 2xl:py-52 lg:pl-10 lg:pr-64 2xl:px-20 bg-linear-gradient flex flex-col gap-3 2xl:gap-4"
           >
             <div
               class="font-semibold text-xl sm:text-4xl 2xl:text-5xl text-white"
@@ -136,7 +136,7 @@
         </div>
         <!-- section second search bars -->
         <section
-          class="w-full px-3 sm:px-10 2xl:px-40 lg:absolute -bottom-32 flex flex-col gap-5 lg:gap-0 lg:items-center"
+          class="animate-slide-bottom w-full px-3 sm:px-10 2xl:px-40 lg:absolute -bottom-32 flex flex-col gap-5 lg:gap-0 lg:items-center"
         >
           <!-- search bar solo div -->
           <div
@@ -417,9 +417,10 @@
           <img
             src="../public/assets/propertypage/pricing-logo-star.png"
             alt="pricing-logo-star"
+            class="animate-slide-top scroll-animate"
           />
           <div class="mt-1 ml-2 flex flex-col gap-10 sm:gap-14 2xl:gap-20">
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2 animate-slide-right scroll-animate">
               <p class="font-semibold text-2xl xl:text-4xl text-white">
                 Discover a World of Possibilities
               </p>
@@ -431,7 +432,10 @@
                 that resonates with your vision of home
               </p>
             </div>
-            <div class="grid grid-flow-col gap-5">
+            <!-- cards -->
+            <div
+              class="grid grid-flow-col gap-5 scroll-animate animate-slide-bottom"
+            >
               <div
                 class="p-5 sm:p-8 2xl:p-10 border border-dark-border rounded-xl gap-6 2xl:gap-8 grid"
               >
@@ -581,7 +585,7 @@
               </div>
             </div>
             <!-- buttons -->
-            <div>
+            <div class="animate-slide-bottom scroll-animate">
               <hr class="pb-2 md:block hidden border-dark-border" />
               <div class="xl:flex justify-between items-start">
                 <div class="hidden xl:inline-block">
@@ -631,10 +635,13 @@
           <img
             src="../public/assets/propertypage/pricing-logo-star.png"
             alt="logo"
+            class="animate-appear scroll-animate"
           />
           <div class="mt-1 ml-2 flex flex-col gap-10 lg:gap-12 2xl:gap-20">
             <!-- heading -->
-            <div class="grid lg:grid-cols-6 gap-2">
+            <div
+              class="grid lg:grid-cols-6 gap-2 animate-appear scroll-animate"
+            >
               <p
                 class="font-semibold lg:col-span-6 text-2xl xl:text-4xl text-white"
               >
@@ -651,7 +658,7 @@
             </div>
             <!-- full form and info -->
             <div
-              class="rounded-xl border border-dark-border flex flex-col gap-8 2xl:gap-12 p-5 lg:p-12 2xl:p-24"
+              class="animate-flowerOpen scroll-animate rounded-xl border border-dark-border flex flex-col gap-8 2xl:gap-12 p-5 lg:p-12 2xl:p-24"
             >
               <!-- for form page -->
               <div
@@ -1339,9 +1346,9 @@
                 </button>
               </p>
             </div>
-            <div class="flex gap-3 sm:gap-6">
+            <div class="flex gap-3 sm:gap-6 overflow-hidden">
               <svg
-                class="bg-color-all p-3.5 h-14 w-14 rounded-full"
+                class="animate-flowerOpen bg-color-all p-3.5 h-14 w-14 rounded-full"
                 viewBox="0 0 13 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1352,7 +1359,7 @@
                 />
               </svg>
               <svg
-                class="bg-color-all p-3.5 h-14 w-14 rounded-full"
+                class="animate-slide-bottom bg-color-all p-3.5 h-14 w-14 rounded-full"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1363,7 +1370,7 @@
                 />
               </svg>
               <svg
-                class="bg-color-all p-3.5 h-14 w-14 rounded-full"
+                class="animate-slide-top bg-color-all p-3.5 h-14 w-14 rounded-full"
                 viewBox="0 0 20 18"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1374,7 +1381,7 @@
                 />
               </svg>
               <svg
-                class="bg-color-all p-3.5 h-14 w-14 rounded-full"
+                class="animate-circle-open bg-color-all p-3.5 h-14 w-14 rounded-full"
                 viewBox="0 0 22 16"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
