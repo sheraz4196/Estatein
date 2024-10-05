@@ -7,7 +7,7 @@
     <title>property page</title>
   </head>
   <body class="bg-color-all font-urbanist">
-    <div class="main-container grid gap-20 lg:gap-48">
+    <div class="main-container grid gap-20 lg:gap-48 max-w-screen-3xl mx-auto">
       <!-- banner header and first two sections -->
       <div class="relative flex flex-col gap-10">
         <div>
@@ -120,12 +120,12 @@
             class="border-b border-b-[#262626] px-3 py-12 sm:px-8 lg:py-32 2xl:py-52 lg:pl-10 lg:pr-64 2xl:px-20 bg-linear-gradient flex flex-col gap-3 2xl:gap-4"
           >
             <div
-              class="font-semibold text-xl sm:text-4xl 2xl:text-5xl text-white"
+              class="animate-slide-left font-semibold text-xl sm:text-4xl 2xl:text-5xl text-white"
             >
               Find Your Dream Property
             </div>
             <div
-              class="font-medium text-sm sm:text-base 2xl:text-lg text-custom-gray"
+              class="animate-slide-left font-medium text-sm sm:text-base 2xl:text-lg text-custom-gray"
             >
               Welcome to Estatein, where your dream property awaits in every
               corner of our beautiful world. Explore our curated selection of
@@ -136,7 +136,7 @@
         </div>
         <!-- section second search bars -->
         <section
-          class="w-full px-3 sm:px-10 2xl:px-40 lg:absolute -bottom-32 flex flex-col gap-5 lg:gap-0 lg:items-center"
+          class="animate-slide-bottom w-full px-3 sm:px-10 2xl:px-40 lg:absolute -bottom-32 flex flex-col gap-5 lg:gap-0 lg:items-center"
         >
           <!-- search bar solo div -->
           <div
@@ -149,7 +149,7 @@
             </p>
             <a
               href="#"
-              class="bg-custom-purple py-3.5 px-5 rounded-lg sm:flex items-center gap-1.5 2xl:gap-2 text-sm 2xl:text-lg"
+              class="hover:bg-color-all active:bg-custom-purple hover:shadow-custom-purple hover:-translate-y-1 active:translate-y-0 duration-300 transition-all bg-custom-purple py-3.5 px-5 rounded-lg sm:flex items-center gap-1.5 2xl:gap-2 text-sm 2xl:text-lg"
               ><svg
                 width="20"
                 height="21"
@@ -417,9 +417,10 @@
           <img
             src="../public/assets/propertypage/pricing-logo-star.png"
             alt="pricing-logo-star"
+            class="animate-slide-top scroll-animate"
           />
           <div class="mt-1 ml-2 flex flex-col gap-10 sm:gap-14 2xl:gap-20">
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2 animate-slide-right scroll-animate">
               <p class="font-semibold text-2xl xl:text-4xl text-white">
                 Discover a World of Possibilities
               </p>
@@ -431,7 +432,10 @@
                 that resonates with your vision of home
               </p>
             </div>
-            <div class="grid grid-flow-col gap-5">
+            <!-- cards -->
+            <div
+              class="grid grid-flow-col gap-5 scroll-animate animate-slide-bottom"
+            >
               <div
                 class="p-5 sm:p-8 2xl:p-10 border border-dark-border rounded-xl gap-6 2xl:gap-8 grid"
               >
@@ -474,11 +478,12 @@
                       $1,250,000
                     </p>
                   </div>
-                  <div
-                    class="px-5 py-3.5 rounded-lg bg-custom-purple font-medium text-xs sm:text-sm text-white text-center"
+                  <a
+                    href="#"
+                    class="hover:bg-color-all active:bg-custom-purple hover:shadow-custom-purple hover:-translate-y-2 active:translate-y-0 duration-300 transition-all px-5 py-3.5 rounded-lg bg-custom-purple font-medium text-xs sm:text-sm text-white text-center"
                   >
                     View Property Details
-                  </div>
+                  </a>
                 </div>
               </div>
               <div
@@ -523,11 +528,12 @@
                       $650,000
                     </p>
                   </div>
-                  <div
-                    class="px-5 py-3.5 rounded-lg bg-custom-purple font-medium text-xs sm:text-sm text-white text-center"
+                  <a
+                    href="#"
+                    class="hover:bg-color-all active:bg-custom-purple hover:shadow-custom-purple hover:-translate-y-2 active:translate-y-0 duration-300 transition-all px-5 py-3.5 rounded-lg bg-custom-purple font-medium text-xs sm:text-sm text-white text-center"
                   >
                     View Property Details
-                  </div>
+                  </a>
                 </div>
               </div>
               <div
@@ -572,16 +578,17 @@
                       $350,000
                     </p>
                   </div>
-                  <div
-                    class="px-5 py-3.5 rounded-lg bg-custom-purple font-medium text-xs sm:text-sm text-white text-center"
+                  <a
+                    href="#"
+                    class="hover:bg-color-all active:bg-custom-purple hover:shadow-custom-purple hover:-translate-y-2 active:translate-y-0 duration-300 transition-all px-5 py-3.5 rounded-lg bg-custom-purple font-medium text-xs sm:text-sm text-white text-center"
                   >
                     View Property Details
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
             <!-- buttons -->
-            <div>
+            <div class="animate-slide-bottom scroll-animate">
               <hr class="pb-2 md:block hidden border-dark-border" />
               <div class="xl:flex justify-between items-start">
                 <div class="hidden xl:inline-block">
@@ -631,10 +638,13 @@
           <img
             src="../public/assets/propertypage/pricing-logo-star.png"
             alt="logo"
+            class="animate-appear scroll-animate"
           />
           <div class="mt-1 ml-2 flex flex-col gap-10 lg:gap-12 2xl:gap-20">
             <!-- heading -->
-            <div class="grid lg:grid-cols-6 gap-2">
+            <div
+              class="grid lg:grid-cols-6 gap-2 animate-appear scroll-animate"
+            >
               <p
                 class="font-semibold lg:col-span-6 text-2xl xl:text-4xl text-white"
               >
@@ -651,7 +661,7 @@
             </div>
             <!-- full form and info -->
             <div
-              class="rounded-xl border border-dark-border flex flex-col gap-8 2xl:gap-12 p-5 lg:p-12 2xl:p-24"
+              class="animate-flowerOpen scroll-animate rounded-xl border border-dark-border flex flex-col gap-8 2xl:gap-12 p-5 lg:p-12 2xl:p-24"
             >
               <!-- for form page -->
               <div
@@ -1008,7 +1018,7 @@
                 </div>
                 <a
                   href="#"
-                  class="text-center py-3.5 px-8 2xl:py-5 2xl:px-11 bg-custom-purple rounded-lg font-medium text-sm text-white"
+                  class="hover:bg-color-all active:bg-custom-purple hover:shadow-custom-purple hover:-translate-y-2 active:translate-y-0 duration-300 transition-all text-center py-3.5 px-8 2xl:py-5 2xl:px-11 bg-custom-purple rounded-lg font-medium text-sm text-white"
                   >Send Your Message</a
                 >
               </div>
@@ -1071,7 +1081,7 @@
               <!-- button -->
               <a
                 href="#"
-                class="font-medium text-sm text-white text-center py-3.5 px-5 bg-custom-purple rounded-lg sm:col-span-2"
+                class="hover:bg-color-all active:bg-custom-purple hover:shadow-custom-purple hover:-translate-y-2 active:translate-y-0 duration-300 transition-all font-medium text-sm text-white text-center py-3.5 px-5 bg-custom-purple rounded-lg sm:col-span-2"
               >
                 Explore Properties
               </a>
@@ -1339,9 +1349,9 @@
                 </button>
               </p>
             </div>
-            <div class="flex gap-3 sm:gap-6">
+            <div class="flex gap-3 sm:gap-6 overflow-hidden">
               <svg
-                class="bg-color-all p-3.5 h-14 w-14 rounded-full"
+                class="animate-flowerOpen bg-color-all p-3.5 h-14 w-14 rounded-full"
                 viewBox="0 0 13 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1352,7 +1362,7 @@
                 />
               </svg>
               <svg
-                class="bg-color-all p-3.5 h-14 w-14 rounded-full"
+                class="animate-slide-bottom bg-color-all p-3.5 h-14 w-14 rounded-full"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1363,7 +1373,7 @@
                 />
               </svg>
               <svg
-                class="bg-color-all p-3.5 h-14 w-14 rounded-full"
+                class="animate-slide-top bg-color-all p-3.5 h-14 w-14 rounded-full"
                 viewBox="0 0 20 18"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1374,7 +1384,7 @@
                 />
               </svg>
               <svg
-                class="bg-color-all p-3.5 h-14 w-14 rounded-full"
+                class="animate-circle-open bg-color-all p-3.5 h-14 w-14 rounded-full"
                 viewBox="0 0 22 16"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

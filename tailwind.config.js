@@ -3,11 +3,18 @@ module.exports = {
   content: ["./*.html", "./src/*.html"],
   theme: {
     extend: {
+      screens: {
+        "3xl": "1920px", // 1920px se upar ke screens ke liye custom breakpoint
+      },
       keyframes: {
+        spin: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
         appear: {
           "0%": {
             opacity: "0",
-            "clip-path": "inset(100% 100% 0 0)",
+            "clip-path": "inset(100% 0 0 0)",
           },
           "100%": {
             opacity: "1",
@@ -48,6 +55,10 @@ module.exports = {
           "0%": { transform: "translateX(-100%)", opacity: "0" },
           "100%": { transform: "translateX(0)", opacity: "1" },
         },
+        "slide-left-fast": {
+          "0%": { transform: "translateX(-100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
         "slide-top": {
           "0%": { transform: "translateY(-100%)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
@@ -72,22 +83,24 @@ module.exports = {
         },
       },
       animation: {
-        appear: "appear linear 2s",
+        appear: "appear 4s forwards",
         fadeIn: "fadeIn linear 2s",
         fadeOut: "fadeOut linear 2s",
         flowerOpen: "flowerOpen 2s forwards",
         "slide-left": "slide-left 2s forwards", // Adjust duration as needed
         "slide-right": "slide-right 2s forwards", // Adjust duration as needed
+        "slide-left-fast": "slide-left-fast forwards",
         "slide-bottom": "slide-bottom 2s forwards",
         "circle-open": "circle-Open 2s forwards",
         "slide-top": "slide-top 2s forwards",
+        "spin-slow": "spin 7s linear infinite", // Adjust the duration (5 seconds)
         // "animation-timeline": "view()",
         // "animation-range": " entry 0% cover 40%",
       },
       boxShadow: {
         "custom-light": "2px 4px 16px -1px rgba(90,90,90,0.3)", // Light color shadow
         "custom-dark": "0 4px 6px -1px rgba(0, 0, 0, 0.75)", // Dark color shadow
-        "custom-purple": "1px 4px 16px 1px rgba(128, 50, 128, 0.7)",
+        "custom-purple": "1px 4px 10px -1px rgba(128, 50, 128, 0.7)",
       },
       fontSize: {
         "xs-10": "10px", // Custom class for 10px font size

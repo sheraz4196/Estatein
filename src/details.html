@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/public/style.css" />
+    <link rel="stylesheet" href="../public/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detail Page</title>
   </head>
   <body class="bg-color-all font-urbanist">
     <!-- main container all section are there -->
-    <div class="main-container flex flex-col gap-20">
+    <div class="main-container flex flex-col gap-20 max-w-screen-3xl mx-auto">
       <!-- header and banner -->
       <div class="grid grid-rows-2 gap-0.5">
         <!-- head for home page -->
@@ -63,9 +63,9 @@
             <li>
               <a href="../src/property.html">Properties</a>
             </li>
-            <li
-                  class="rounded-lg py-3 hover:shadow-custom-purple hover:bg-custom-purple hover:-translate-y-1 active:translate-y-0 duration-300 transition-all px-5 border border-dark-border bg-color-all active:bg-color-all"
-                >Details</a></li>
+            <li class="rounded-lg py-3 hover:shadow-custom-purple hover:bg-custom-purple hover:-translate-y-1 active:translate-y-0 duration-300 transition-all px-5 border border-dark-border bg-color-all active:bg-color-all">
+              <a href="../src/details.html">Details</a>
+              </li>
             <li><a href="../src/service.html">Services</a></li>
           </ul>
           <a
@@ -100,7 +100,7 @@
           <div
             class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2.5 sm:gap-0"
           >
-            <div class="flex gap-5 sm:items-center sm:flex-row">
+            <div class="animate-fadeIn flex gap-5 sm:items-center sm:flex-row">
               <p
                 class="text-white font-semibold text-xl lg:text-2xl 2xl:text-3xl"
               >
@@ -129,7 +129,7 @@
               </div>
             </div>
             <!-- price -->
-            <div class="flex gap-5 items-center">
+            <div class="animate-fadeOut flex gap-5 items-center">
               <div
                 class="flex p-2 2xl:p-2.5 sm:hidden gap-1 items-center border border-[#262626] rounded-md"
               >
@@ -163,7 +163,7 @@
             <div class="flex gap-5 2xl:gap-8 flex-col-reverse sm:flex-col">
               <!-- all properties -->
               <div
-                class="grid grid-flow-col gap-2.5 2xl:gap-5 p-2.5 2xl:p-5 border border-[#262626] bg-color-all rounded-xl"
+                class="animate-flowerOpen grid grid-flow-col gap-2.5 2xl:gap-5 p-2.5 2xl:p-5 border border-[#262626] bg-color-all rounded-xl"
               >
                 <img
                   src="../public/assets/propertydetails/small-size.png"
@@ -216,18 +216,18 @@
                 <img
                   src="../public/assets/propertydetails/large-screen-img-one.png"
                   alt="large-screen-img-one"
-                  class="w-full"
+                  class="w-full animate-slide-left"
                 />
                 <img
                   src="/public/assets/propertydetails/large-screen-img.png"
                   alt="large-screen-img"
-                  class="w-full hidden sm:inline-block"
+                  class="w-full hidden sm:inline-block animate-slide-right"
                 />
               </div>
             </div>
             <!-- for buttons -->
             <div
-              class="bg-color-all place-items-center sm:self-center rounded-full grid grid-flow-col p-2 2xl:p-2.5 place-content-between sm:gap-10"
+              class="animate-flowerOpen scroll-animate bg-color-all place-items-center sm:self-center rounded-full grid grid-flow-col p-2 2xl:p-2.5 place-content-between sm:gap-10"
             >
               <svg
                 class="w-11 h-11 border border-[#262626] p-3.5 rounded-full"
@@ -359,7 +359,7 @@
         <div class="grid grid-flow-row md:grid-cols-2 gap-5 2xl:gap-8">
           <!-- first -->
           <div
-            class="row-span-1 p-5 sm:p-10 2xl:p-12 border border-[#262626] rounded-xl flex flex-col gap-5 sm:gap-10 2xl:gap-12"
+            class="animate-slide-bottom scroll-animate row-span-1 p-5 sm:p-10 2xl:p-12 border border-[#262626] rounded-xl flex flex-col gap-5 sm:gap-10 2xl:gap-12"
           >
             <div
               class="flex flex-col gap-1.5 sm:gap-2.5 2xl:gap-3.5 items-start"
@@ -665,7 +665,7 @@
           </div>
           <!-- second -->
           <div
-            class="row-span-2 rounded-xl border border-[#262626] p-5 sm:p-10 2xl:p-12 flex flex-col items-start gap-5 sm:gap-10 2xl:gap-12"
+            class="animate-slide-right scroll-animate row-span-2 rounded-xl border border-[#262626] p-5 sm:p-10 2xl:p-12 flex flex-col items-start gap-5 sm:gap-10 2xl:gap-12"
           >
             <p class="text-white font-semibold text-lg sm:text-xl 2xl:text-2xl">
               Key Features and Amenities
@@ -801,18 +801,19 @@
         <img
           src="../public/assets/propertydetails/pricing-logo-star.png"
           alt="logo star"
+          class="animate-slide-top scroll-animate"
         />
         <div
           class="grid grid-flow-row lg:grid-cols-11 gap-10 lg:gap-20 2xl:gap-24 ml-2 mt-1"
         >
           <div class="lg:col-span-4 flex flex-col gap-2 lg:gap-2.5">
             <p
-              class="text-white font-semibold 2xl:gap-4 text-2xl lg:text-4xl 2xl:text-5xl"
+              class="animate-fadeIn scroll-animate text-white font-semibold 2xl:gap-4 text-2xl lg:text-4xl 2xl:text-5xl"
             >
               Inquire About Seaside Serenity Villa
             </p>
             <p
-              class="text-[#999999] font-medium text-sm lg:text-base 2xl:text-lg"
+              class="animate-slide-bottom scroll-animate text-[#999999] font-medium text-sm lg:text-base 2xl:text-lg"
             >
               Interested in this property? Fill out the form below, and our real
               estate experts will get back to you with more details, including
@@ -821,7 +822,7 @@
           </div>
           <!-- full form and info -->
           <div
-            class="lg:col-span-7 rounded-xl border border-[#262626] flex flex-col gap-8 2xl:gap-12 p-5 lg:p-12 2xl:p-24"
+            class="animate-slide-right scroll-animate lg:col-span-7 rounded-xl border border-[#262626] flex flex-col gap-8 2xl:gap-12 p-5 lg:p-12 2xl:p-24"
           >
             <!-- for form page -->
             <div
@@ -940,7 +941,7 @@
               </div>
               <a
                 href="#"
-                class="text-center py-3.5 px-8 2xl:py-5 2xl:px-11 bg-custom-purple rounded-lg font-medium text-sm text-white"
+                class="hover:bg-color-all active:bg-custom-purple hover:shadow-custom-purple hover:-translate-y-2 active:translate-y-0 duration-300 transition-all text-center py-3.5 px-8 2xl:py-5 2xl:px-11 bg-custom-purple rounded-lg font-medium text-sm text-white"
                 >Send Your Message</a
               >
             </div>
@@ -952,6 +953,7 @@
         <img
           src="../public/assets/propertydetails/pricing-logo-star.png"
           alt="logo star"
+          class="animate-slide-top scroll-animate"
         />
         <div class="ml-2 mt-1 flex flex-col gap-10 lg:gap-14 2xl:gap-20">
           <!-- first for name -->
@@ -959,12 +961,12 @@
             class="grid gap-2 lg:grid-cols-5 grid-flow-row lg:gap-2.5 2xl:gap-3.5"
           >
             <p
-              class="text-white lg:col-span-5 font-semibold text-2xl lg:text-4xl 2xl:text-5xl"
+              class="animate-fadeIn scroll-animate text-white lg:col-span-5 font-semibold text-2xl lg:text-4xl 2xl:text-5xl"
             >
               Comprehensive Pricing Details
             </p>
             <p
-              class="lg:col-span-4 text-[#999999] font-medium text-sm lg:text-base 2xl:text-lg"
+              class="animate-fadeOut scroll-animate lg:col-span-4 text-[#999999] font-medium text-sm lg:text-base 2xl:text-lg"
             >
               At Estatein, transparency is key. We want you to have a clear
               understanding of all costs associated with your property
@@ -976,7 +978,7 @@
           <div class="flex flex-col gap-7 lg:gap-10 2xl:gap-12">
             <!-- note -->
             <div
-              class="flex flex-col lg:items-center lg:flex-row gap-2.5 lg:gap-4 2xl:gap-5 border border-[#262626] rounded-lg py-6 px-5 lg:py-5 lg:px-10 2xl:py-7 2xl:px-12"
+              class="animate-flowerOpen scroll-animate flex flex-col lg:items-center lg:flex-row gap-2.5 lg:gap-4 2xl:gap-5 border border-[#262626] rounded-lg py-6 px-5 lg:py-5 lg:px-10 2xl:py-7 2xl:px-12"
             >
               <div
                 class="text-white font-semibold text-lg lg:text-xl 2xl:text-2xl"
@@ -991,7 +993,7 @@
             </div>
             <!-- details -->
             <div class="grid lg:grid-cols-5 gap-5 lg:gap-10 2xl:gap-12">
-              <div class="flex flex-col gap-0.5 lg:col-span-1">
+              <div class="animate-slide-left-fast scroll-animate flex flex-col gap-0.5 lg:col-span-1">
                 <p
                   class="text-[#999999] text-sm lg:text-base 2xl:text-xl font-medium"
                 >
@@ -1008,7 +1010,7 @@
               >
                 <!-- first -->
                 <div
-                  class="flex flex-col gap-5 lg:gap-8 2xl:gap-10 rounded-xl border border-[#262626] p-5 lg:p-10 2xl:p-12"
+                  class="animate-slide-right scroll-animate flex flex-col gap-5 lg:gap-8 2xl:gap-10 rounded-xl border border-[#262626] p-5 lg:p-10 2xl:p-12"
                 >
                   <div class="flex justify-between items-center">
                     <p
@@ -1018,7 +1020,7 @@
                     </p>
                     <a
                       href="#"
-                      class="font-medium text-sm 2xl:text-lg rounded-lg bg-[#1A1A1A] py-3.5 px-5 2xl:py-4 2xl:px-6 text-white border border-[#262626]"
+                      class="hover:bg-custom-purple active:bg-color-all hover:shadow-custom-purple hover:-translate-y-2 active:translate-y-0 duration-300 transition-all font-medium text-sm 2xl:text-lg rounded-lg bg-[#1A1A1A] py-3.5 px-5 2xl:py-4 2xl:px-6 text-white border border-[#262626]"
                       >Learn More</a
                     >
                   </div>
@@ -1135,7 +1137,7 @@
                 </div>
                 <!-- second -->
                 <div
-                  class="flex flex-col gap-5 lg:gap-8 2xl:gap-10 rounded-xl border border-[#262626] p-5 lg:p-10 2xl:p-12"
+                  class="animate-slide-bottom scroll-animate flex flex-col gap-5 lg:gap-8 2xl:gap-10 rounded-xl border border-[#262626] p-5 lg:p-10 2xl:p-12"
                 >
                   <div class="flex justify-between items-center">
                     <p
@@ -1145,7 +1147,7 @@
                     </p>
                     <a
                       href="#"
-                      class="font-medium text-sm 2xl:text-lg rounded-lg bg-[#1A1A1A] py-3.5 px-5 2xl:py-4 2xl:px-6 text-white border border-[#262626]"
+                      class="hover:bg-custom-purple active:bg-color-all hover:shadow-custom-purple hover:-translate-y-2 active:translate-y-0 duration-300 transition-all font-medium text-sm 2xl:text-lg rounded-lg bg-[#1A1A1A] py-3.5 px-5 2xl:py-4 2xl:px-6 text-white border border-[#262626]"
                       >Learn More</a
                     >
                   </div>
@@ -1189,7 +1191,7 @@
                 </div>
                 <!-- third -->
                 <div
-                  class="flex flex-col gap-5 lg:gap-8 2xl:gap-10 rounded-xl border border-[#262626] p-5 lg:p-10 2xl:p-12"
+                  class="animate-slide-left scroll-animate flex flex-col gap-5 lg:gap-8 2xl:gap-10 rounded-xl border border-[#262626] p-5 lg:p-10 2xl:p-12"
                 >
                   <div class="flex justify-between items-center">
                     <p
@@ -1199,7 +1201,7 @@
                     </p>
                     <a
                       href="#"
-                      class="font-medium text-sm 2xl:text-lg rounded-lg bg-[#1A1A1A] py-3.5 px-5 2xl:py-4 2xl:px-6 text-white border border-[#262626]"
+                      class="hover:bg-custom-purple active:bg-color-all hover:shadow-custom-purple hover:-translate-y-2 active:translate-y-0 duration-300 transition-all font-medium text-sm 2xl:text-lg rounded-lg bg-[#1A1A1A] py-3.5 px-5 2xl:py-4 2xl:px-6 text-white border border-[#262626]"
                       >Learn More</a
                     >
                   </div>
@@ -1290,7 +1292,7 @@
                 </div>
                 <!-- fourth -->
                 <div
-                  class="flex flex-col gap-5 lg:gap-8 2xl:gap-10 rounded-xl border border-[#262626] p-5 lg:p-10 2xl:p-12"
+                  class="animate-flowerOpen scroll-animate flex flex-col gap-5 lg:gap-8 2xl:gap-10 rounded-xl border border-[#262626] p-5 lg:p-10 2xl:p-12"
                 >
                   <div class="flex justify-between items-center">
                     <p
@@ -1300,7 +1302,7 @@
                     </p>
                     <a
                       href="#"
-                      class="font-medium text-sm 2xl:text-lg rounded-lg bg-[#1A1A1A] py-3.5 px-5 2xl:py-4 2xl:px-6 text-white border border-[#262626]"
+                      class="hover:bg-custom-purple active:bg-color-all hover:shadow-custom-purple hover:-translate-y-2 active:translate-y-0 duration-300 transition-all font-medium text-sm 2xl:text-lg rounded-lg bg-[#1A1A1A] py-3.5 px-5 2xl:py-4 2xl:px-6 text-white border border-[#262626]"
                       >Learn More</a
                     >
                   </div>
@@ -1391,11 +1393,12 @@
         <img
           src="../public/assets/propertydetails/pricing-logo-star.png"
           alt="pricing-logo-star"
+          class="animate-slide-top scroll-animate"
         />
-        <div class="grid grid-flow-row gap-10 ml-2 mt-1">
+        <div class="flex flex-col gap-10 ml-2 mt-1">
           <!-- first div for heading etc -->
           <div class="grid grid-cols-1 xl:grid-cols-5 xl:place-items-end">
-            <div class="flex flex-col gap-3 xl:col-span-3 xl:place-self-start">
+            <div class="animate-slide-left scroll-animate flex flex-col gap-3 xl:col-span-3 xl:place-self-start">
               <p
                 class="font-semibold text-2xl xl:text-4xl 2xl:text-5xl text-white"
               >
@@ -1409,13 +1412,13 @@
             </div>
             <a
               href="#"
-              class="col-span-2 text-white font-medium text-sm sm:text-lg hidden text-center xl:inline-block rounded-lg border border-[#262626] py-2 px-3 bg-[#1A1A1A]"
+              class="hover:bg-custom-purple active:bg-color-all hover:shadow-custom-purple hover:-translate-y-2 active:translate-y-0 duration-300 transition-all animate-flowerOpen scroll-animate col-span-2 text-white font-medium text-sm sm:text-lg hidden text-center xl:inline-block rounded-lg border border-[#262626] py-2 px-3 bg-[#1A1A1A]"
             >
               View All FAQ’s
             </a>
           </div>
           <!-- Question and answers -->
-          <div class="grid sm:grid-cols-4 lg:grid-cols-6 gap-5">
+          <div class="grid sm:grid-cols-4 lg:grid-cols-6 gap-5 animate-slide-bottom scroll-animate">
             <!-- first question-->
             <div
               class="p-10 border border-[#262626] rounded-xl flex sm:col-span-2 lg:col-span-2 flex-col items-start gap-6 justify-between"
@@ -1432,7 +1435,7 @@
               <!-- btn -->
               <a
                 href="#"
-                class="text-sm font-medium text-white py-[14px] px-5 border border-[#262626] bg-[#1A1A1A] rounded-lg"
+                class="hover:bg-custom-purple active:bg-color-all hover:shadow-custom-purple hover:-translate-y-2 active:translate-y-0 duration-300 transition-all text-sm font-medium text-white py-[14px] px-5 border border-[#262626] bg-[#1A1A1A] rounded-lg"
               >
                 Read More
               </a>
@@ -1454,7 +1457,7 @@
               <!-- client card and his name -->
               <a
                 href="#"
-                class="text-sm font-medium text-white py-[14px] px-5 border border-[#262626] bg-[#1A1A1A] rounded-lg"
+                class="hover:bg-custom-purple active:bg-color-all hover:shadow-custom-purple hover:-translate-y-2 active:translate-y-0 duration-300 transition-all text-sm font-medium text-white py-[14px] px-5 border border-[#262626] bg-[#1A1A1A] rounded-lg"
               >
                 Read More
               </a>
@@ -1476,7 +1479,7 @@
               <!-- client card and his name -->
               <a
                 href="#"
-                class="text-sm font-medium text-white py-[14px] px-5 border border-[#262626] bg-[#1A1A1A] rounded-lg"
+                class="hover:bg-custom-purple active:bg-color-all hover:shadow-custom-purple hover:-translate-y-2 active:translate-y-0 duration-300 transition-all text-sm font-medium text-white py-[14px] px-5 border border-[#262626] bg-[#1A1A1A] rounded-lg"
               >
                 Read More
               </a>
@@ -1484,11 +1487,11 @@
           </div>
           <!-- third div for all pages buttons -->
           <div
-            class="flex justify-between gap-2 items-center pt-4 border-t border-[#262626]"
+            class="animate-flowerOpen scroll-animate flex justify-between gap-2 items-center pt-4 border-t border-[#262626]"
           >
             <a
               href="#"
-              class="text-white font-medium text-sm sm:text-lg xl:hidden rounded-lg border border-[#262626] py-2 px-3 inline-block bg-[#1A1A1A]"
+              class="hover:bg-custom-purple active:bg-color-all hover:shadow-custom-purple hover:-translate-y-2 active:translate-y-0 duration-300 transition-all text-white font-medium text-sm sm:text-lg xl:hidden rounded-lg border border-[#262626] py-2 px-3 inline-block bg-[#1A1A1A]"
             >
               View All FAQ'S
             </a>
@@ -1589,7 +1592,7 @@
             <!-- button -->
             <a
               href="#"
-              class="font-medium text-sm text-white text-center py-3.5 px-5 bg-custom-purple rounded-lg sm:col-span-2"
+              class="hover:bg-color-all active:bg-custom-purple hover:shadow-custom-purple hover:-translate-y-2 active:translate-y-0 duration-300 transition-all font-medium text-sm text-white text-center py-3.5 px-5 bg-custom-purple rounded-lg sm:col-span-2"
             >
               Explore Properties
             </a>
@@ -1847,9 +1850,9 @@
               </button>
             </p>
           </div>
-          <div class="flex gap-3 sm:gap-6">
+          <div class="flex gap-3 sm:gap-6 overflow-hidden">
             <svg
-              class="bg-color-all p-3.5 h-14 w-14 rounded-full"
+              class="animate-flowerOpen bg-color-all p-3.5 h-14 w-14 rounded-full"
               viewBox="0 0 13 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -1860,7 +1863,7 @@
               />
             </svg>
             <svg
-              class="bg-color-all p-3.5 h-14 w-14 rounded-full"
+              class="animate-slide-bottom bg-color-all p-3.5 h-14 w-14 rounded-full"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -1871,7 +1874,7 @@
               />
             </svg>
             <svg
-              class="bg-color-all p-3.5 h-14 w-14 rounded-full"
+              class="animate-slide-top bg-color-all p-3.5 h-14 w-14 rounded-full"
               viewBox="0 0 20 18"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -1882,7 +1885,7 @@
               />
             </svg>
             <svg
-              class="bg-color-all p-3.5 h-14 w-14 rounded-full"
+              class="animate-circle-open bg-color-all p-3.5 h-14 w-14 rounded-full"
               viewBox="0 0 22 16"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

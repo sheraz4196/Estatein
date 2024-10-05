@@ -7,7 +7,7 @@
     <title>Services Page</title>
   </head>
   <body class="bg-color-all font-urbanist">
-    <div class="main-container grid gap-20 lg:gap-48">
+    <div class="main-container grid gap-20 lg:gap-48 max-w-screen-3xl mx-auto">
       <!-- header and first two sections -->
       <div class="relative flex flex-col">
         <!-- first section and header banner -->
@@ -123,12 +123,12 @@
             class="border-b border-b-[#262626] px-3 py-12 sm:px-8 lg:py-32 2xl:py-52 lg:pl-10 lg:pr-64 2xl:px-20 bg-linear-gradient flex flex-col gap-3 2xl:gap-4"
           >
             <div
-              class="font-semibold text-xl sm:text-4xl 2xl:text-5xl text-white"
+              class="animate-slide-left font-semibold text-xl sm:text-4xl 2xl:text-5xl text-white"
             >
               Elevate Your Real Estate Experience
             </div>
             <div
-              class="font-medium text-sm sm:text-base 2xl:text-lg text-custom-gray"
+              class="animate-slide-left font-medium text-sm sm:text-base 2xl:text-lg text-custom-gray"
             >
               Welcome to Estatein, where your real estate aspirations meet
               expert guidance. Explore our comprehensive range of services, each
@@ -138,7 +138,7 @@
         </div>
         <!-- second section -->
         <section
-          class="lg:absolute -bottom-32 grid grid-cols-2 grid-rows-2 sm:grid-rows-none sm:grid-cols-4 gap-3 p-2.5 outline outline-4 outline-solid outline-[#1a1a1a] border border-dark-border bg-color-all z-50 w-full"
+          class="animate-slide-bottom lg:absolute -bottom-32 grid grid-cols-2 grid-rows-2 sm:grid-rows-none sm:grid-cols-4 gap-3 p-2.5 outline outline-4 outline-solid outline-[#1a1a1a] border border-dark-border bg-color-all z-50 w-full"
         >
           <!-- first -->
           <div class="rounded-lg border-for-button py-5 px-4 bg-custom-dark">
@@ -734,6 +734,7 @@
         <img
           src="../public/assets/servicespage/pricing-logo-star.png"
           alt="logo"
+          class="animate-flowerOpen scroll-animate"
         />
         <!-- two div exsist -->
         <div class="mt-1 ml-2 flex flex-col gap-10 sm:gap-14 2xl:gap-20">
@@ -741,12 +742,12 @@
           <div class="grid lg:grid-cols-6 gap-2 sm:gap-2.5 2xl:gap-3.5">
             <!-- for heading -->
             <div
-              class="lg:col-span-6 text-white font-semibold text-3xl sm:text-4xl 2xl:text-5xl"
+              class="animate-fadeIn scroll-animate lg:col-span-6 text-white font-semibold text-3xl sm:text-4xl 2xl:text-5xl"
             >
               Unlock Property Value
             </div>
             <!-- for para -->
-            <div class="lg:col-span-5">
+            <div class="lg:col-span-5 animate-slide-bottom scroll-animate">
               <p class="inline-block sm:hidden text-[#999999] text-sm">
                 Selling your property should be a rewarding experience, and at
                 Estatein, we make sure it is.
@@ -764,7 +765,7 @@
           </div>
           <!-- second for boxes -->
           <div
-            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 2xl:gap-8"
+            class="animate-flowerOpen scroll-animate grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 2xl:gap-8"
           >
             <!-- first box -->
             <div
@@ -1308,7 +1309,7 @@
                 </p>
                 <a
                   href="#"
-                  class="text-white font-medium text-sm 2xl:text-lg text-center bg-color-all rounded-lg py-3.5 px-5 2xl:py-5 2xl:px-6 border border-dark-border"
+                  class="hover:bg-custom-purple active:bg-color-all hover:shadow-custom-purple hover:-translate-y-2 active:translate-y-0 duration-300 transition-all text-white font-medium text-sm 2xl:text-lg text-center bg-color-all rounded-lg py-3.5 px-5 2xl:py-5 2xl:px-6 border border-dark-border"
                   >Learn More</a
                 >
               </div>
@@ -1328,6 +1329,7 @@
         <img
           src="../public/assets/servicespage/pricing-logo-star.png"
           alt="logo"
+          class="animate-slide-top scroll-animate"
         />
         <!-- two div exsist -->
         <div class="mt-1 ml-2 flex flex-col gap-10 sm:gap-14 2xl:gap-20">
@@ -1335,12 +1337,12 @@
           <div class="grid lg:grid-cols-6 gap-2 sm:gap-2.5 2xl:gap-3.5">
             <!-- for heading -->
             <div
-              class="lg:col-span-6 text-white font-semibold text-3xl sm:text-4xl 2xl:text-5xl"
+              class="animate-slide-left scroll-animate lg:col-span-6 text-white font-semibold text-3xl sm:text-4xl 2xl:text-5xl"
             >
               Effortless Property Management
             </div>
             <!-- for para -->
-            <div class="lg:col-span-5">
+            <div class="lg:col-span-5 animate-slide-right scroll-animate">
               <p class="inline-block sm:hidden text-[#999999] text-sm">
                 Owning a property should be a pleasure, not a hassle. Estatein's
                 Property Management Service takes the stress out of property
@@ -1359,7 +1361,7 @@
           </div>
           <!-- second for boxes -->
           <div
-            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 2xl:gap-8"
+            class="animate-slide-bottom scroll-animate grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 2xl:gap-8"
           >
             <!-- first box -->
             <div
@@ -1939,7 +1941,7 @@
                 </p>
                 <a
                   href="#"
-                  class="text-white font-medium lg:place-self-end lg:self-center text-sm 2xl:text-lg text-center bg-color-all rounded-lg py-3.5 px-5 2xl:py-5 2xl:px-6 border border-dark-border"
+                  class="hover:bg-custom-purple active:bg-color-all hover:shadow-custom-purple hover:-translate-y-2 active:translate-y-0 duration-300 transition-all text-white font-medium lg:place-self-end lg:self-center text-sm 2xl:text-lg text-center bg-color-all rounded-lg py-3.5 px-5 2xl:py-5 2xl:px-6 border border-dark-border"
                   >Learn More</a
                 >
               </div>
@@ -1959,13 +1961,16 @@
         <img
           src="../public/assets/servicespage/pricing-logo-star.png"
           alt="logo-stars"
+          class="animate-slide-top"
         />
         <!-- two divs are there -->
         <div class="ml-2 mt-1 grid lg:grid-cols-12 gap-10 lg:gap-12 2xl:gap-12">
           <!-- first -->
           <div class="lg:col-span-4 flex flex-col gap-8 lg:gap-10 2xl:gap-12">
             <!-- child first heading -->
-            <div class="flex flex-col gap-2 lg:gap-2.5 2xl:gap-4">
+            <div
+              class="animate-slide-left scroll-animate flex flex-col gap-2 lg:gap-2.5 2xl:gap-4"
+            >
               <p
                 class="text-white font-semibold text-2xl lg:text-4xl 2xl:text-5xl"
               >
@@ -1986,7 +1991,7 @@
             </div>
             <!-- child second for read more button -->
             <div
-              class="bg-value border border-dark-border bg-custom-dark rounded-lg p-6 lg:p-10 2xl:p-12 flex flex-col gap-5 2xl:gap-8"
+              class="animate-slide-bottom scroll-animate bg-value border border-dark-border bg-custom-dark rounded-lg p-6 lg:p-10 2xl:p-12 flex flex-col gap-5 2xl:gap-8"
             >
               <!-- for heading -->
               <p
@@ -2004,14 +2009,14 @@
               </p>
               <a
                 href="#"
-                class="text-white font-medium text-sm 2xl:text-lg text-center bg-color-all rounded-lg py-3.5 px-5 2xl:py-5 2xl:px-6 border border-dark-border"
+                class="hover:bg-custom-purple active:bg-color-all hover:shadow-custom-purple hover:-translate-y-2 active:translate-y-0 duration-300 transition-all text-white font-medium text-sm 2xl:text-lg text-center bg-color-all rounded-lg py-3.5 px-5 2xl:py-5 2xl:px-6 border border-dark-border"
                 >Learn More</a
               >
             </div>
           </div>
           <!-- second -->
           <div
-            class="lg:col-span-8 bg-custom-dark rounded-xl p-2.5 grid sm:grid-cols-2 gap-2.5"
+            class="animate-slide-right scroll-animate lg:col-span-8 bg-custom-dark rounded-xl p-2.5 grid sm:grid-cols-2 gap-2.5"
           >
             <!-- first -->
             <div
@@ -2624,7 +2629,7 @@
             <!-- button -->
             <a
               href="#"
-              class="font-medium text-sm text-white text-center py-3.5 px-5 bg-custom-purple rounded-lg sm:col-span-2"
+              class="hover:bg-color-all active:bg-custom-purple hover:shadow-custom-purple hover:-translate-y-2 active:translate-y-0 duration-300 transition-all font-medium text-sm text-white text-center py-3.5 px-5 bg-custom-purple rounded-lg sm:col-span-2"
             >
               Explore Properties
             </a>
@@ -2882,9 +2887,9 @@
               </button>
             </p>
           </div>
-          <div class="flex gap-3 sm:gap-6">
+          <div class="flex gap-3 sm:gap-6 overflow-hidden">
             <svg
-              class="bg-color-all p-3.5 h-14 w-14 rounded-full"
+              class="animate-flowerOpen bg-color-all p-3.5 h-14 w-14 rounded-full"
               viewBox="0 0 13 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -2895,7 +2900,7 @@
               />
             </svg>
             <svg
-              class="bg-color-all p-3.5 h-14 w-14 rounded-full"
+              class="animate-slide-bottom bg-color-all p-3.5 h-14 w-14 rounded-full"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -2906,7 +2911,7 @@
               />
             </svg>
             <svg
-              class="bg-color-all p-3.5 h-14 w-14 rounded-full"
+              class="animate-slide-top bg-color-all p-3.5 h-14 w-14 rounded-full"
               viewBox="0 0 20 18"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -2917,7 +2922,7 @@
               />
             </svg>
             <svg
-              class="bg-color-all p-3.5 h-14 w-14 rounded-full"
+              class="animate-circle-open bg-color-all p-3.5 h-14 w-14 rounded-full"
               viewBox="0 0 22 16"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
