@@ -116,7 +116,7 @@ module.exports = {
       },
       backgroundImage: {
         header: "url('./assets/homepage/abstract-design.png')",
-        value: "url('./assets/servicespage/Abstract-value.png')", // New image
+        value: "url('./assets/servicespage/abstract-value.png')", // New image
         contact: "url('./assets/contactpage/abstract-contact.png')",
         "custom-gradient":
           "linear-gradient(134.79deg, rgba(112, 59, 247, 0.5) -0.01%, rgba(112, 59, 247, 0) 9.65%)",
